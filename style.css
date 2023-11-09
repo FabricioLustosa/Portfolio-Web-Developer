@@ -136,6 +136,11 @@ section.topo-do-site .flex {
   background-color: #c8ad55;
   border-radius: 20px;
 }
+#outraimg {
+  width: 300px;
+  background-color: #c8ad55;
+  border-radius: 20px;
+}
 
 @keyframes flutuar {
   0% {
