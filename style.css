@@ -37,6 +37,10 @@ h2.titulo span {
 .flex {
   display: flex;
 }
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px #c8ad55;
+}
 /* Estilo cabeçalho */
 header {
   padding: 40px 4%;
@@ -54,10 +58,6 @@ header nav ul li {
   padding: 0 40px;
 }
 
-header .btn-contato button:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 8px #c8ad55;
-}
 nav a {
   color: rgba(112, 111, 111, 0.988);
   text-decoration: none;
@@ -129,13 +129,14 @@ section.topo-do-site .flex {
   font-size: 2em;
   color: #c8ad55;
 }
-.topo-do-site .img-topo-site img {
+#img-topo-site {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
   width: 300px;
   background-color: #c8ad55;
   border-radius: 20px;
 }
+
 #outraimg {
   width: 300px;
   background-color: #c8ad55;
@@ -154,7 +155,7 @@ section.topo-do-site .flex {
 /* ESTILO DAS TECNOLOGIAS */
 
 .tecnologias {
-  margin-top: 20rem;
+  margin-top: 25rem;
   padding: 40px 4%;
 }
 .tecnologias .interface .flex {
@@ -178,4 +179,81 @@ i {
 .tecnologias .tecnologias-box h3 {
   font-size: 1.5rem;
   margin: 15px 0;
+}
+
+/* ESTILO SEÇÃO SOBRE */
+#img-sobre {
+  width: 300px;
+  background-color: #c8ad55;
+  border-radius: 20px;
+}
+.sobre {
+  margin-top: 7rem;
+  padding: 40px 4%;
+}
+.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+.txt-sobre {
+  color: white;
+}
+.txt-sobre h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.txt-sobre span {
+  color: #c8ad55;
+  display: block;
+}
+.txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+.btn-redes-sociais button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: #c8ad55;
+  cursor: pointer;
+  margin: 20px;
+  transition: ease 0.4s;
+}
+.btn-redes-sociais {
+  display: flex;
+  align-items: center;
+}
+.btn-redes-sociais button i {
+  color: #02111b;
+  font-size: 1.7rem;
+}
+
+/* ESTILO PORTFÓLIO */
+
+.portfolio {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px rgba(112, 111, 111, 0.988);
+}
+.portfolio .flex {
+  justify-content: space-around;
+}
+
+.img-portfolio {
+  width: 250px;
+  height: 150px;
+  background-color: #c8ad55;
+}
+#projeto1 {
+  width: 100%;
+  background-image: url(images/screenshot-127.0.0.1_5501-2023.11.09-10_20_36.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projeto2 {
+  width: 100%;
+  background-image: url(images/screenshot-127.0.0.1_5501-2023.11.09-10_24_43.png);
+  background-size: cover;
 }
