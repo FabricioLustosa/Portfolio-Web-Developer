@@ -149,7 +149,7 @@ section.topo-do-site .flex {
 /* ESTILO DAS TECNOLOGIAS */
 
 .tecnologias {
-  margin-top: 25rem;
+  margin-top: 22rem;
   padding: 40px 4%;
 }
 .tecnologias .interface .flex {
@@ -229,7 +229,7 @@ i {
 .portfolio {
   margin-top: 4rem;
   padding: 40px 4%;
-  box-shadow: 0 0 40px 10px rgba(112, 111, 111, 0.732);
+  /* box-shadow: 0 0 40px 10px rgba(112, 111, 111, 0.732); */
 }
 .portfolio .flex {
   padding: 30px;
@@ -286,4 +286,47 @@ i {
 }
 .overlay:hover {
   opacity: 1;
+}
+
+/* ESTILO FOOTER */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.202);
+}
+footer .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+footer .btn-redes-sociais i {
+  font-size: 1.3rem;
+}
+footer .btn-redes-sociais button {
+  width: 50px;
+  height: 50px;
+}
+
+.linha-footer {
+  padding: 20px 0;
+}
+
+.linha-footer p i {
+  color: #c8ad55;
+  font-size: 22px;
+}
+.linha-footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+.linha-footer p a:hover {
+  color: #c8ad55;
+}
+.borda {
+  border-top: 2px solid #c8ad55;
+  margin-top: 22px;
+}
+.borda p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
