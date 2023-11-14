@@ -99,7 +99,6 @@ nav a:hover::after {
 
 section.topo-do-site {
   margin-top: 80px;
-
   height: 20vh;
   padding: 40px 4%;
 }
@@ -329,4 +328,73 @@ footer .btn-redes-sociais button {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* MEDIA QUERY */
+
+/*topo do site */
+@media screen and (max-width: 1190px) {
+  .menu-desktop {
+    display: none;
+  }
+  .btn-contato {
+    display: none;
+  }
+  section.topo-do-site {
+    margin-top: 20px;
+    padding: 40px 8%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  .txt-topo-site {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    line-height: 60px;
+  }
+
+  .topo-do-site h1 {
+    font-size: 3em;
+    margin-top: 20px;
+  }
+
+  .topo-do-site .txt-topo-site h3 {
+    padding-left: 2px;
+    font-size: 1.8em;
+  }
+  #img-topo-site {
+    animation: none;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 50px;
+  }
+
+  /* ESTILO DAS TECNOLOGIAS */
+
+  .tecnologias {
+    margin-top: 40rem;
+    padding: 40px 8%;
+  }
+  .tecnologias .interface .flex {
+    gap: 1rem;
+  }
+  .tecnologias .tecnologias-box {
+    margin-top: 45px;
+    transition: 0.2s;
+  }
+  .tecnologias .tecnologias-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffffdc;
+  }
+  i {
+    font-size: 5rem;
+    color: #c8ad55;
+  }
+  .tecnologias .tecnologias-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
 }
