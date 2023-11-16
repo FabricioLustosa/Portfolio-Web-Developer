@@ -99,7 +99,7 @@ nav a:hover::after {
 
 section.topo-do-site {
   margin-top: 80px;
-  height: 20vh;
+
   padding: 40px 4%;
 }
 
@@ -202,7 +202,6 @@ i {
 }
 .txt-sobre p {
   margin: 20px 0;
-  text-align: justify;
 }
 .btn-redes-sociais button {
   width: 80px;
@@ -332,8 +331,8 @@ footer .btn-redes-sociais button {
 
 /* MEDIA QUERY */
 
-/*topo do site */
 @media screen and (max-width: 1190px) {
+  /*topo do site */
   .menu-desktop {
     display: none;
   }
@@ -344,6 +343,7 @@ footer .btn-redes-sociais button {
     margin-top: 20px;
     padding: 40px 8%;
   }
+
   .flex {
     flex-direction: column;
   }
@@ -375,26 +375,138 @@ footer .btn-redes-sociais button {
   /* ESTILO DAS TECNOLOGIAS */
 
   .tecnologias {
-    margin-top: 40rem;
-    padding: 40px 8%;
+    margin-top: 5rem;
+    padding: 40px 4%;
   }
   .tecnologias .interface .flex {
     gap: 1rem;
   }
-  .tecnologias .tecnologias-box {
-    margin-top: 45px;
-    transition: 0.2s;
+  .tecnologias-box {
+    text-align: center;
   }
-  .tecnologias .tecnologias-box:hover {
+  .tecnologias-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffffdc;
   }
-  i {
-    font-size: 5rem;
+  .tecnologias-box:last-child {
+    margin-bottom: -3.5rem;
+  }
+
+  .tecnologias .tecnologias-box h3 {
+    font-size: 1.8rem;
+  }
+  .flex {
+    align-items: center;
+  }
+  .tecnologias p {
+    font-size: 1.2rem;
+  }
+
+  /* ESTILO SEÇÃO SOBRE */
+  #img-sobre {
+    margin-top: 2.5rem;
+    max-width: 360px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.598);
+    margin-bottom: -4rem;
+  }
+  .sobre {
+    background-color: #5d737e;
+  }
+  .sobre .flex {
+    text-align: center;
+  }
+
+  .txt-sobre h2 {
+    background-color: #02111b;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+  .txt-sobre span {
+    font-size: 2rem;
+    color: #c8ad55;
+    display: block;
+  }
+  .txt-sobre p {
+    font-size: 1.5rem;
+    margin: 20px 4%;
+  }
+  .btn-redes-sociais {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+  .btn-redes-sociais button {
+    background-color: #02111b;
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn-redes-sociais button i {
     color: #c8ad55;
   }
-  .tecnologias .tecnologias-box h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
+
+  /* ESTILO PORTFÓLIO */
+
+  .portfolio {
+    margin-top: 0;
+  }
+  .portfolio .flex {
+    padding: 30px;
+  }
+  .portfolio .interface h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  /* ESTILO FOOTER */
+
+  footer .logo {
+    display: none;
+  }
+  footer {
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.202);
+  }
+  footer .btn-redes-sociais {
+    margin-top: 0;
+  }
+
+  footer .btn-redes-sociais i {
+    color: #02111b;
+    font-size: 1.3rem;
+  }
+  footer .btn-redes-sociais button {
+    background-color: #c8ad55;
+  }
+
+  .linha-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .linha-footer p i {
+    color: #c8ad55;
+    font-size: 22px;
+  }
+  .linha-footer p a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .linha-footer p a:hover {
+    color: #c8ad55;
+  }
+  .borda {
+    border-top: 2px solid #c8ad55;
+    margin-top: 22px;
+  }
+  .borda p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }
