@@ -1,4 +1,9 @@
-/* #02111B, #CFD186 ou #C8AD55, #ED1C24 ou #CC2936, #5D737E, #7D1D3F */
+/* , #CFD186 ou , #ED1C24 ou #CC2936, #5D737E,  */
+:root {
+  --bgColor: #02111b;
+  --detailsColor: #c8ad55;
+  --detailsColor2: #7d1d3f;
+}
 
 /* Estilo Geral */
 * {
@@ -8,14 +13,14 @@
   font-family: "Gabarito", sans-serif;
 }
 body {
-  background-color: #02111b;
+  background-color: var(--bgColor);
   height: 100vh;
 }
 .btn-contato button {
   padding: 10px 40px;
   font-size: 1.1em;
   font-weight: 500;
-  background-color: #c8ad55;
+  background-color: var(--detailsColor);
   border-radius: 40px;
   border: 0;
   cursor: pointer;
@@ -27,7 +32,7 @@ h2.titulo {
   text-align: center;
 }
 h2.titulo span {
-  color: #c8ad55;
+  color: var(--detailsColor);
 }
 
 .interface {
@@ -39,7 +44,7 @@ h2.titulo span {
 }
 button:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 8px #c8ad55;
+  box-shadow: 0px 0px 8px var(--detailsColor);
 }
 /* Estilo cabeçalho */
 header {
@@ -74,7 +79,7 @@ nav a::after {
   content: " ";
   width: 0%;
   height: 4px;
-  background-color: #c8ad55;
+  background-color: var(--detailsColor);
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -85,12 +90,11 @@ nav a:hover::after {
 }
 .logo a {
   display: inline-block;
-  /* background-color: #c8ad55; */
   border-radius: 20px;
   padding: 0px 10px;
   list-style-type: none;
   font-style: italic;
-  color: #c8ad55;
+  color: var(--detailsColor);
   font-size: 3em;
   font-weight: 600;
   text-decoration: none;
@@ -99,7 +103,6 @@ nav a:hover::after {
 
 section.topo-do-site {
   margin-top: 80px;
-
   padding: 40px 4%;
 }
 
@@ -108,7 +111,7 @@ section.topo-do-site {
   border-radius: 10px 0px 0px 10px;
   width: 100%;
   line-height: 40px;
-  background-color: #7d1d3f;
+  background-color: var(--detailsColor2);
 }
 section.topo-do-site .flex {
   align-items: center;
@@ -121,18 +124,18 @@ section.topo-do-site .flex {
   margin-top: 50px;
 }
 .topo-do-site .txt-topo-site h1 span {
-  color: #c8ad55;
+  color: var(--detailsColor);
 }
 .topo-do-site .txt-topo-site h3 {
   padding-left: 2px;
   font-size: 2em;
-  color: #c8ad55;
+  color: var(--detailsColor);
 }
 #img-topo-site {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
   width: 300px;
-  background-color: #c8ad55;
+  background-color: var(--detailsColor);
   border-radius: 20px;
 }
 
@@ -148,17 +151,23 @@ section.topo-do-site .flex {
 /* ESTILO DAS TECNOLOGIAS */
 
 .tecnologias {
-  margin-top: 22rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
   padding: 40px 4%;
 }
+
 .tecnologias .interface .flex {
-  gap: 4rem;
+  margin-top: 5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .tecnologias .tecnologias-box {
   color: white;
   padding: 40px;
   border-radius: 20px;
-  margin-top: 45px;
+
   transition: 0.2s;
 }
 .tecnologias .tecnologias-box:hover {
@@ -167,7 +176,7 @@ section.topo-do-site .flex {
 }
 i {
   font-size: 5rem;
-  color: #c8ad55;
+  color: var(--detailsColor);
 }
 .tecnologias .tecnologias-box h3 {
   font-size: 1.5rem;
@@ -175,16 +184,21 @@ i {
 }
 
 /* ESTILO SEÇÃO SOBRE */
-#img-sobre {
-  width: 300px;
-  background-color: #c8ad55;
-  border-radius: 20px;
-}
 .sobre {
-  margin-top: 7rem;
+  margin-top: 6rem;
   padding: 40px 4%;
 }
+.sobre .interface .flex .img-estilo-geral {
+  display: flex;
+  align-items: center;
+}
+#img-sobre {
+  width: 300px;
+  background-color: var(--detailsColor);
+  border-radius: 20px;
+}
 .sobre .flex {
+  justify-content: center;
   align-items: center;
   gap: 60px;
 }
@@ -194,21 +208,28 @@ i {
 .txt-sobre h2 {
   font-size: 3rem;
   line-height: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .txt-sobre span {
-  color: #c8ad55;
+  color: var(--detailsColor);
   display: block;
 }
 .txt-sobre p {
   margin: 20px 0;
+}
+.txt-sobre ul {
+  list-style-position: inside;
+}
+.txt-sobre ul li {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .btn-redes-sociais button {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: none;
-  background-color: #c8ad55;
+  background-color: var(--detailsColor);
   cursor: pointer;
   margin: 20px;
   transition: ease 0.4s;
@@ -216,6 +237,7 @@ i {
 .btn-redes-sociais {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .btn-redes-sociais button i {
   color: #02111b;
@@ -225,7 +247,7 @@ i {
 /* ESTILO PORTFÓLIO */
 
 .portfolio {
-  margin-top: 4rem;
+  margin-top: 6rem;
   padding: 40px 4%;
   /* box-shadow: 0 0 40px 10px rgba(112, 111, 111, 0.732); */
 }
@@ -236,7 +258,7 @@ i {
   height: 500px;
   justify-content: space-around;
 }
-.interface h2 {
+.portfolio .interface h2 {
   margin-top: 2rem;
 }
 
@@ -245,7 +267,7 @@ i {
   cursor: pointer;
   width: 50%;
   height: 75%;
-  background-color: #c8ad55;
+  background-color: var(--detailsColor);
   background-position: 50% 50%;
   transition: all 1s;
   position: relative;
@@ -309,7 +331,7 @@ footer .btn-redes-sociais button {
 }
 
 .linha-footer p i {
-  color: #c8ad55;
+  color: var(--detailsColor);
   font-size: 22px;
 }
 .linha-footer p a {
@@ -317,10 +339,10 @@ footer .btn-redes-sociais button {
   text-decoration: none;
 }
 .linha-footer p a:hover {
-  color: #c8ad55;
+  color: var(--detailsColor);
 }
 .borda {
-  border-top: 2px solid #c8ad55;
+  border-top: 2px solid var(--detailsColor);
   margin-top: 22px;
 }
 .borda p {
