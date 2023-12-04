@@ -12,14 +12,11 @@
   box-sizing: border-box;
   font-family: "Gabarito", sans-serif;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   display: flex;
   flex-direction: column;
   background-color: var(--bgColor);
-  height: 100vh;
 }
 .btn-contato button {
   padding: 10px 40px;
@@ -101,6 +98,12 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+.active {
+  padding: 7px 10px;
+  border-radius: 10px;
+  background-color: var(--detailsColor);
+  color: black;
+}
 .logo a {
   display: inline-block;
   border-radius: 20px;
@@ -138,10 +141,10 @@ section.topo-do-site .flex {
   font-size: 4em;
   margin-top: 50px;
 }
-.topo-do-site .txt-topo-site h1 span {
+.txt-topo-site h1 span {
   color: var(--detailsColor);
 }
-.topo-do-site .txt-topo-site h3 {
+.txt-topo-site h3 {
   padding-left: 2px;
   font-size: 2em;
   color: var(--detailsColor);
@@ -179,14 +182,13 @@ section.topo-do-site .flex {
   align-items: center;
   justify-content: space-between;
 }
-.tecnologias .tecnologias-box {
+.tecnologias-box {
   color: white;
   padding: 40px;
-  border-radius: 20px;
-
+  border-radius: 10px;
   transition: 0.2s;
 }
-.tecnologias .tecnologias-box:hover {
+.tecnologias-box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #ffffffdc;
 }
@@ -194,7 +196,7 @@ i {
   font-size: 5rem;
   color: var(--detailsColor);
 }
-.tecnologias .tecnologias-box h3 {
+.tecnologias-box h3 {
   font-size: 1.5rem;
   margin: 15px 0;
 }
@@ -204,10 +206,7 @@ i {
   margin-top: 6rem;
   padding: 40px 4%;
 }
-.sobre .interface .flex .img-estilo-geral {
-  display: flex;
-  align-items: center;
-}
+
 #img-sobre {
   width: 300px;
   background-color: var(--detailsColor);
@@ -266,17 +265,12 @@ i {
 .portfolio {
   margin-top: 6rem;
   padding: 40px 4%;
-  /* box-shadow: 0 0 40px 10px rgba(112, 111, 111, 0.732); */
 }
 .portfolio .flex {
   padding: 30px;
   gap: 3rem;
   align-items: center;
   height: 500px;
-  justify-content: space-around;
-}
-.portfolio .interface h2 {
-  margin-top: 2rem;
 }
 
 .img-portfolio {
