@@ -335,12 +335,27 @@ section.topo-do-site .flex {
 #projeto1 {
   width: 100%;
 
-  background-image: url(images/screenshot-127.0.0.1_5501-2023.11.09-10_20_36.png);
+  background-image: url(images/contadordecalorias.png);
   background-size: cover;
   /* background-repeat: no-repeat; */
 }
 
 #projeto2 {
+  width: 100%;
+  background-image: url(images/reprodutordemusica.png);
+  background-size: cover;
+}
+#projeto3 {
+  width: 100%;
+  background-image: url(images/screenshot-127.0.0.1_5501-2023.11.09-10_20_36.png);
+  background-size: cover;
+}
+#projeto4 {
+  width: 100%;
+  background-image: url(images/battlegame.png);
+  background-size: cover;
+}
+#projeto5 {
   width: 100%;
   background-image: url(images/screenshot-127.0.0.1_5501-2023.11.09-10_24_43.png);
   background-size: cover;
