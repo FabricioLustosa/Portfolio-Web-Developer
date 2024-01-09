@@ -233,9 +233,6 @@ i {
   color: var(--detailsColor);
   display: block;
 }
-.txt-sobre p {
-  margin: 20px 0;
-}
 .txt-sobre ul {
   list-style-position: inside;
 }
@@ -269,18 +266,28 @@ i {
   margin-top: 6rem;
   padding: 40px 4%;
 }
+.portfolio .interface {
+  height: 100%;
+}
+.portfolio .interface h2 {
+  margin-bottom: 5rem;
+}
 .portfolio .flex {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   gap: 3rem;
   align-items: center;
-  height: 500px;
+  height: 100%;
 }
 
 .img-portfolio {
+  max-width: 800px;
+  max-height: 600px;
   border-radius: 20px;
   cursor: pointer;
-  width: 50%;
-  height: 75%;
+  width: 300px;
+  height: 400px;
   background-color: var(--detailsColor);
   background-position: 50% 50%;
   transition: all 1s;
@@ -291,9 +298,10 @@ i {
 }
 #projeto1 {
   width: 100%;
+
   background-image: url(images/screenshot-127.0.0.1_5501-2023.11.09-10_20_36.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 #projeto2 {
@@ -305,9 +313,9 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -372,9 +380,11 @@ footer .btn-redes-sociais button {
 
 @media screen and (max-width: 1190px) {
   /*topo do site */
-
   .btn-contato {
     display: none;
+  }
+  .topo-do-site .interface .flex {
+    padding-top: 0;
   }
   section.topo-do-site {
     margin-top: 20px;
@@ -386,6 +396,7 @@ footer .btn-redes-sociais button {
   }
 
   .txt-topo-site {
+    margin-top: 80px;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
@@ -444,7 +455,6 @@ footer .btn-redes-sociais button {
     margin-top: 2.5rem;
     max-width: 360px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.598);
-    margin-bottom: -4rem;
   }
   .sobre {
     background-color: #5d737e;
