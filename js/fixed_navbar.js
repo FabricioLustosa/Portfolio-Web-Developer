@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbarHeight = document.querySelector("header").offsetHeight;
 
-  const links = document.querySelectorAll("nav ul li a");
+  const links = document.querySelectorAll("nav  a");
 
   links.forEach((link) => {
     link.addEventListener("click", function (e) {

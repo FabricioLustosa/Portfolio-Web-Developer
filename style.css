@@ -44,7 +44,7 @@ h2.titulo span {
 .flex {
   display: flex;
 }
-button:hover {
+.btn-contato button:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 8px var(--detailsColor);
 }
@@ -72,6 +72,10 @@ header nav ul li {
   display: inline-block;
   padding: 0 40px;
 }
+.menu-desktop {
+  display: flex;
+  align-items: center;
+}
 
 nav a {
   color: rgba(112, 111, 111, 0.988);
@@ -80,11 +84,11 @@ nav a {
   transition: ease 0.3s;
   position: relative;
 }
-nav a:hover {
+nav ul li a:hover {
   color: white;
   transform: scale(1.2);
 }
-nav a::after {
+nav ul li a::after {
   border-radius: 5px;
   content: " ";
   width: 0%;
@@ -121,7 +125,7 @@ nav a:hover::after {
 
 /* Estilo do topo do site */
 
-section.topo-do-site {
+.topo-do-site {
   margin-top: 12rem;
   padding: 40px 4%;
 }
@@ -159,7 +163,35 @@ section.topo-do-site .flex {
   background-color: var(--detailsColor);
   border-radius: 20px;
 }
-
+.curriculo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: var(--bgColor);
+  min-width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.curriculo:hover {
+  transform: scale(1.05);
+}
+.curriculo i {
+  font-size: 2rem;
+  color: var(--detailsColor);
+}
+.curriculo a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+.curriculo a:hover {
+  font-weight: 500;
+}
 @keyframes flutuar {
   0% {
     top: 0;
@@ -195,7 +227,7 @@ section.topo-do-site .flex {
   transform: scale(1.05);
   box-shadow: 0 0 20px #ffffffdc;
 }
-i {
+.tecnologias .interface .flex i {
   font-size: 5rem;
   color: var(--detailsColor);
 }
@@ -258,6 +290,10 @@ i {
 .btn-redes-sociais button i {
   color: #02111b;
   font-size: 1.7rem;
+}
+.btn-redes-sociais button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px var(--detailsColor);
 }
 
 /* ESTILO PORTFÓLIO */
@@ -380,9 +416,7 @@ footer .btn-redes-sociais button {
 
 @media screen and (max-width: 1190px) {
   /*topo do site */
-  .btn-contato {
-    display: none;
-  }
+
   .topo-do-site .interface .flex {
     padding-top: 0;
   }
@@ -396,8 +430,11 @@ footer .btn-redes-sociais button {
   }
 
   .txt-topo-site {
+    display: flex;
+    flex-direction: column;
     margin-top: 80px;
     border-radius: 10px;
+    align-items: center;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -490,6 +527,10 @@ footer .btn-redes-sociais button {
     width: 60px;
     height: 60px;
   }
+  .btn-redes-sociais button:hover {
+    transform: scale(1.09);
+    box-shadow: 0px 0px 8px var(--bgColor);
+  }
 
   .btn-redes-sociais button i {
     color: #c8ad55;
@@ -558,7 +599,7 @@ footer .btn-redes-sociais button {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 940px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -577,12 +618,14 @@ footer .btn-redes-sociais button {
     left: 0;
     right: 0;
     width: 100vw;
-    transition: 0.5s;
     overflow: hidden;
   }
   .menu-desktop.active {
     box-shadow: 0px 8px 15px -5px rgba(0, 0, 0, 0.673);
-    height: 350px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
   }
   .menu-desktop.active ul {
     display: flex;
